@@ -184,7 +184,7 @@ class ContinuousCatcher():
         self.lives = init_lives
 
         # Parameters of the fruit
-        self.fruit_size = percent_round_int(height, 0.06)
+        self.fruit_size = percent_round_int(min(height, width), 0.06)
         self.fruit_fall_speed = 0.00095 * height
 
         # Parameters of the bar
